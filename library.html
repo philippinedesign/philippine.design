@@ -4,11 +4,13 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>PHILIPPINE.DESIGN</title>
+  <title>PHILIPPINE.DESIGN LIBRARY</title>
   <meta charset="UTF-8" />
   <meta name="description" content="PHILIPPINE.DESIGN investigates the identity of the Filipino designer through research, publishing, & archives. Maintained by Developh and Chia Amisola.">
 
+
   <link rel="stylesheet" href="assets/s.css">
+  <link rel="stylesheet" href="assets/page.css">
 
 </head>
 
@@ -16,7 +18,7 @@
 
   <div class="potato" style="left:-10px;transform:rotate(17deg);"><img src="assets/yellow-potato.png"></div>
   <div class="potato" style="right:30px;top:190px;transform:rotate(130deg);"><img width="150" src="assets/blue-potato.png"></div>
-  <div class="potato" style="left:140px;top:320px;transform:scaleX(-1.9) rotate(10deg);"><img width="120" src="assets/pink-potato.png"></div>
+  <div class="potato" style="left:140px;top:240px;transform:scaleX(-1.9) rotate(10deg);"><img width="120" src="assets/pink-potato.png"></div>
   <div class="potato" style="right:30px;top:590px;transform:scaleX(-1) rotate(35deg);"><img width="310" src="assets/pink-potato.png"></div>
   <div class="potato" style="left:-150px;top:390px;transform:scaleX(1) rotate(35deg);"><img width="320" src="assets/yellow-potato.png"></div>
   <div class="potato" style="left:-100px;top:890px;transform:scaleX(1) rotate(5deg);"><img width="240" src="assets/blue-potato.png"></div>
@@ -44,9 +46,9 @@
   <div id="cover">
     <h1>
       PHILIPPINE
-      DESIGN
+      DESIGN LIBRARY
     </h1>
-    <h3>Investigating the identity, history, & position of the Filipino designer</h3>
+    <h3>A collection of texts from filipino authors & on filipino design</h3>
   </div>
 
   <div class="marquee" style="width:100vw;">
@@ -69,50 +71,27 @@
     </div>
   </div>
 
-  <div id="projects">
-    <a href="library.html" class="wide">
-      <span>PHILIPPINE DESIGN LIBRARY</span>
-    </a>
-    <a href="https://philippinecassettearchive.com" target="_blank">
-      <span>PHILIPPINE CASSETTE ARCHIVE</span>
-    </a>
-    <a href="https://instagram.com/philippine_design" target="_blank">
-      <span>PHILIPPINE DESIGN ON INSTAGRAM</span>
-    </a>
-  </div>
-
-  <div class="marquee" style="width:100vw;">
-    <div class="marquee-container">
-      <p>How do we decolonize design?</p>
-      <p>What are the qualities of Filipino designs?</p>
-      <p>How can we recenter indigenous practices in design?</p>
-      <p>How do we embrace our roots and who we are coming forward?</p>
-      <p>Who claims the identity of a Filipino designer?</p>
-      <p>Who is a Filipino?</p>
-    </div>
-
-    <div class="marquee-container" aria-hidden="true">
-      <p>How do we decolonize design?</p>
-      <p>What are the qualities of Filipino designs?</p>
-      <p>How can we recenter indigenous practices in design?</p>
-      <p>How do we embrace our roots and who we are coming forward?</p>
-      <p>Who claims the identity of a Filipino designer?</p>
-      <p>Who is a Filipino?</p>
-    </div>
-  </div>
 
   <main>
-    <br>
+    <div id="library" data-spreadsheet-api="library.json">
+      <a href="{{url}}" target="_blank">
+        <div class="row">
+          <div class="-title">{{title}}</div>
+          <div class="-author">{{author}}</div>
+          <div class="-date">{{date}}</div>
+        </div>
+      </a>
+    </div>
 
-    <p>
-      <span class="highlight">PHILIPPINE.DESIGN</span> is a research initiative investigating the identity, history, and position of the Filipino designer. We pursue archival, publishing, and research as key methods of inquiry in naming 'Filipino design'. Committed to decentering Western narratives and recentering intersectional, indigenous practices not only across graphic & product design, but design's everyday manifestations—particularly in design as social practice.
-    </p>
 
-    <p>We're maintained by <a href="https://developh.org">Developh</a>, a community of practice reclaiming technology as a tool for liberation rather than oppression; stewarded by <a href="https://chia.design">Chia Amisola</a>, a Tondo-born SF-based designer.</p>
-
-    <h2>Send us your proposals</h2>
-    <p align="center" style="margin-top:-1.5em;">If you have proposals for projects, research, archives, or would like to write with us—send them over to <a href="mailto:hello@philippine.design">HELLO@philippine.design</a>.</p>
-
+    <section style="background:#fff61e;max-width: 70vw;margin:0 auto;">
+      <h2>Submit to the library</h2>
+      <p align="center" style="margin-top:-1.5em;font-size: .8rem;">Send them at <a href="mailto:hello@philippine.design">HELLO@philippine.design</a> or add them to the <a href="https://www.are.na/chia/ph-design" target="_blank">Philippine Design Are.na channel</a>.</p>
+    </section>
+    <br><br>
+    <center>
+      <a class="btn-back" href="index.html">BACK TO INDEX</a>
+    </center>
     <br><br>
   </main>
 
@@ -141,6 +120,8 @@
   </footer>
 
 
+  <script src="//code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
+  <script src="index.js" type="text/javascript"></script>
 </body>
 
 </html>

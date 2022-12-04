@@ -1,0 +1,83 @@
+$blue: #397af5;
+$red: #d83030;
+$pink: #ff68ee;
+$yellow: #fff61e;
+$brown: #261a1a;
+
+
+
+#cover {
+  max-height: 250px;
+
+  h1 {
+    font-size: 5.5em;
+  }
+
+  @media only screen and (max-width: 888px) {
+    max-height: none;
+  }
+
+}
+
+#library {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+
+  a {
+    width: 100vw;
+    background: $red;
+    color: $pink;
+
+
+    .row {
+      margin: 0 auto;
+      padding: 1em .5em;
+      max-width: 720px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+    }
+  }
+
+  a:nth-child(1n) {
+    background: $pink;
+    color: $red;
+  }
+
+  a:nth-child(2n) {
+    background: $yellow;
+    color: $blue;
+  }
+
+  a:nth-child(3n) {
+    background: $red;
+    color: $pink;
+  }
+
+  a:hover {
+    background: $blue;
+  }
+
+  a:nth-child(1n):hover {
+    text-shadow: 0 0 5px $red, 0 0 15px $red, 0 0 15px $red, 0 0 15px $red, 0 0 35px $red, 0 0 25px $red;
+  }
+
+  a:nth-child(2n):hover {
+    text-shadow: 0 0 5px $blue 0 0 15px $blue,
+      0 0 15px $blue,
+      0 0 15px $blue,
+      0 0 35px $blue,
+      0 0 25px $blue;
+  }
+
+  a:nth-child(3n):hover {
+    text-shadow: 0 0 5px $pink, 0 0 15px $pink, 0 0 15px $pink, 0 0 15px $pink, 0 0 35px $pink, 0 0 25px $pink;
+  }
+
+}
+
+a.btn-back {
+  font-size: 2em;
+  margin-right: 0 auto;
+}

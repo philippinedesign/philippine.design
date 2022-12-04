@@ -1,0 +1,61 @@
+#cover {
+  max-height: 250px;
+}
+#cover h1 {
+  font-size: 5.5em;
+}
+@media only screen and (max-width: 888px) {
+  #cover {
+    max-height: none;
+  }
+}
+
+#library {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+#library a {
+  width: 100vw;
+  background: #d83030;
+  color: #ff68ee;
+}
+#library a .row {
+  margin: 0 auto;
+  padding: 1em 0.5em;
+  max-width: 720px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+#library a:nth-child(1n) {
+  background: #ff68ee;
+  color: #d83030;
+}
+#library a:nth-child(2n) {
+  background: #fff61e;
+  color: #397af5;
+}
+#library a:nth-child(3n) {
+  background: #d83030;
+  color: #ff68ee;
+}
+#library a:hover {
+  background: #397af5;
+}
+#library a:nth-child(1n):hover {
+  text-shadow: 0 0 5px #d83030, 0 0 15px #d83030, 0 0 15px #d83030, 0 0 15px #d83030, 0 0 35px #d83030, 0 0 25px #d83030;
+}
+#library a:nth-child(2n):hover {
+  text-shadow: 0 0 5px #397af5 0 0 15px #397af5, 0 0 15px #397af5, 0 0 15px #397af5, 0 0 35px #397af5, 0 0 25px #397af5;
+}
+#library a:nth-child(3n):hover {
+  text-shadow: 0 0 5px #ff68ee, 0 0 15px #ff68ee, 0 0 15px #ff68ee, 0 0 15px #ff68ee, 0 0 35px #ff68ee, 0 0 25px #ff68ee;
+}
+
+a.btn-back {
+  font-size: 2em;
+  margin-right: 0 auto;
+}
+
+/*# sourceMappingURL=page.css.map */
