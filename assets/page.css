@@ -1,3 +1,8 @@
+@media only screen and (max-width: 888px) {
+  .potato.byemobile {
+    display: none;
+  }
+}
 #cover {
   max-height: 250px;
 }
