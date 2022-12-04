@@ -2,11 +2,14 @@
 <html lang="en">
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>PHILIPPINE.DESIGN LIBRARY</title>
   <meta charset="UTF-8" />
   <meta name="description" content="PHILIPPINE.DESIGN investigates the identity of the Filipino designer through research, publishing, & archives. Maintained by Developh and Chia Amisola.">
+
+  <meta property="og:image" content="preview.png">
+  <meta property="og:url" content="https://philippine.design">
 
 
   <link rel="stylesheet" href="assets/s.css">
@@ -15,113 +18,114 @@
 </head>
 
 <body>
+  <div id="potato-container">
 
-  <div class="potato" style="left:-10px;transform:rotate(17deg);"><img src="assets/yellow-potato.png"></div>
-  <div class="potato" style="right:30px;top:190px;transform:rotate(130deg);"><img width="150" src="assets/blue-potato.png"></div>
-  <div class="potato" style="left:140px;top:240px;transform:scaleX(-1.9) rotate(10deg);"><img width="120" src="assets/pink-potato.png"></div>
-  <div class="potato" style="right:30px;top:590px;transform:scaleX(-1) rotate(35deg);"><img width="310" src="assets/pink-potato.png"></div>
-  <div class="potato" style="left:-150px;top:390px;transform:scaleX(1) rotate(35deg);"><img width="320" src="assets/yellow-potato.png"></div>
-  <div class="potato" style="left:-100px;top:890px;transform:scaleX(1) rotate(5deg);"><img width="240" src="assets/blue-potato.png"></div>
 
-  <div class="fx-noise"></div>
-  <div class="marquee" style="width:100vw;">
-    <div class="marquee-container">
-      <p>How do we decolonize design?</p>
-      <p>What are the qualities of Filipino designs?</p>
-      <p>How can we recenter indigenous practices in design?</p>
-      <p>How do we embrace our roots and who we are coming forward?</p>
-      <p>Who claims the identity of a Filipino designer?</p>
-      <p>Who is a Filipino?</p>
+    <div class="potato" style="left:-10px;transform:rotate(17deg);"><img src="assets/yellow-potato.png"></div>
+    <div class="potato" style="right:30px;top:190px;transform:rotate(130deg);"><img width="150" src="assets/blue-potato.png"></div>
+    <div class="potato" style="left:140px;top:240px;transform:scaleX(-1.9) rotate(10deg);"><img width="120" src="assets/pink-potato.png"></div>
+    <div class="potato" style="right:30px;top:590px;transform:scaleX(-1) rotate(35deg);"><img width="310" src="assets/pink-potato.png"></div>
+    <div class="potato" style="left:-150px;top:390px;transform:scaleX(1) rotate(35deg);"><img width="320" src="assets/yellow-potato.png"></div>
+    <div class="potato" style="left:-100px;top:890px;transform:scaleX(1) rotate(5deg);"><img width="240" src="assets/blue-potato.png"></div>
+
+    <div class="fx-noise"></div>
+    <div class="marquee" style="width:100vw;">
+      <div class="marquee-container">
+        <p>How do we decolonize design?</p>
+        <p>What are the qualities of Filipino designs?</p>
+        <p>How can we recenter indigenous practices in design?</p>
+        <p>How do we embrace our roots and who we are coming forward?</p>
+        <p>Who claims the identity of a Filipino designer?</p>
+        <p>Who is a Filipino?</p>
+      </div>
+
+      <div class="marquee-container" aria-hidden="true">
+        <p>How do we decolonize design?</p>
+        <p>What are the qualities of Filipino designs?</p>
+        <p>How can we recenter indigenous practices in design?</p>
+        <p>How do we embrace our roots and who we are coming forward?</p>
+        <p>Who claims the identity of a Filipino designer?</p>
+        <p>Who is a Filipino?</p>
+      </div>
+    </div>
+    <div id="cover">
+      <h1>
+        PHILIPPINE
+        DESIGN LIBRARY
+      </h1>
+      <h3>A collection of texts from filipino authors // on filipino design</h3>
     </div>
 
-    <div class="marquee-container" aria-hidden="true">
-      <p>How do we decolonize design?</p>
-      <p>What are the qualities of Filipino designs?</p>
-      <p>How can we recenter indigenous practices in design?</p>
-      <p>How do we embrace our roots and who we are coming forward?</p>
-      <p>Who claims the identity of a Filipino designer?</p>
-      <p>Who is a Filipino?</p>
+    <div class="marquee" style="width:100vw;">
+      <div class="marquee-container">
+        <p>How do we decolonize design?</p>
+        <p>What are the qualities of Filipino designs?</p>
+        <p>How can we recenter indigenous practices in design?</p>
+        <p>How do we embrace our roots and who we are coming forward?</p>
+        <p>Who claims the identity of a Filipino designer?</p>
+        <p>Who is a Filipino?</p>
+      </div>
+
+      <div class="marquee-container" aria-hidden="true">
+        <p>How do we decolonize design?</p>
+        <p>What are the qualities of Filipino designs?</p>
+        <p>How can we recenter indigenous practices in design?</p>
+        <p>How do we embrace our roots and who we are coming forward?</p>
+        <p>Who claims the identity of a Filipino designer?</p>
+        <p>Who is a Filipino?</p>
+      </div>
     </div>
+
+
+    <main>
+      <div id="library" data-spreadsheet-api="library.json">
+        <a href="{{url}}" target="_blank">
+          <div class="row">
+            <div class="-title">{{title}}</div>
+            <div class="-author">{{author}}</div>
+            <div class="-date">{{date}}</div>
+          </div>
+        </a>
+      </div>
+
+
+      <section style="background:#fff61e;max-width: 70vw;margin:0 auto;">
+        <h2>Submit to the library</h2>
+        <p align="center" style="margin-top:-1.5em;font-size: .8rem;text-align: center;">Submit them to <a href="https://forms.gle/ULE5VqEEkgHouiMW8" target="_blank">this form</a> or email us at <a href="mailto:hello@philippine.design">HELLO@philippine.design</a> or add them to the <a href="https://www.are.na/chia/ph-design" target="_blank">Philippine Design Are.na channel</a>.</p>
+      </section>
+      <br><br>
+      <center>
+        <a class="btn-back" href="index.html">BACK TO INDEX</a>
+      </center>
+      <br><br>
+    </main>
+
+    <div class="marquee" style="width:100vw;">
+      <div class="marquee-container">
+        <p>How do we decolonize design?</p>
+        <p>What are the qualities of Filipino designs?</p>
+        <p>How can we recenter indigenous practices in design?</p>
+        <p>How do we embrace our roots and who we are coming forward?</p>
+        <p>Who claims the identity of a Filipino designer?</p>
+        <p>Who is a Filipino?</p>
+      </div>
+
+      <div class="marquee-container" aria-hidden="true">
+        <p>How do we decolonize design?</p>
+        <p>What are the qualities of Filipino designs?</p>
+        <p>How can we recenter indigenous practices in design?</p>
+        <p>How do we embrace our roots and who we are coming forward?</p>
+        <p>Who claims the identity of a Filipino designer?</p>
+        <p>Who is a Filipino?</p>
+      </div>
+    </div>
+
+    <footer>
+      A PROJECT BY DEVELOPH EST 2019
+    </footer>
+
+
+    <script src="//code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <script src="index.js" type="text/javascript"></script>
   </div>
-  <div id="cover">
-    <h1>
-      PHILIPPINE
-      DESIGN LIBRARY
-    </h1>
-    <h3>A collection of texts from filipino authors & on filipino design</h3>
-  </div>
-
-  <div class="marquee" style="width:100vw;">
-    <div class="marquee-container">
-      <p>How do we decolonize design?</p>
-      <p>What are the qualities of Filipino designs?</p>
-      <p>How can we recenter indigenous practices in design?</p>
-      <p>How do we embrace our roots and who we are coming forward?</p>
-      <p>Who claims the identity of a Filipino designer?</p>
-      <p>Who is a Filipino?</p>
-    </div>
-
-    <div class="marquee-container" aria-hidden="true">
-      <p>How do we decolonize design?</p>
-      <p>What are the qualities of Filipino designs?</p>
-      <p>How can we recenter indigenous practices in design?</p>
-      <p>How do we embrace our roots and who we are coming forward?</p>
-      <p>Who claims the identity of a Filipino designer?</p>
-      <p>Who is a Filipino?</p>
-    </div>
-  </div>
-
-
-  <main>
-    <div id="library" data-spreadsheet-api="library.json">
-      <a href="{{url}}" target="_blank">
-        <div class="row">
-          <div class="-title">{{title}}</div>
-          <div class="-author">{{author}}</div>
-          <div class="-date">{{date}}</div>
-        </div>
-      </a>
-    </div>
-
-
-    <section style="background:#fff61e;max-width: 70vw;margin:0 auto;">
-      <h2>Submit to the library</h2>
-      <p align="center" style="margin-top:-1.5em;font-size: .8rem;">Send them at <a href="mailto:hello@philippine.design">HELLO@philippine.design</a> or add them to the <a href="https://www.are.na/chia/ph-design" target="_blank">Philippine Design Are.na channel</a>.</p>
-    </section>
-    <br><br>
-    <center>
-      <a class="btn-back" href="index.html">BACK TO INDEX</a>
-    </center>
-    <br><br>
-  </main>
-
-  <div class="marquee" style="width:100vw;">
-    <div class="marquee-container">
-      <p>How do we decolonize design?</p>
-      <p>What are the qualities of Filipino designs?</p>
-      <p>How can we recenter indigenous practices in design?</p>
-      <p>How do we embrace our roots and who we are coming forward?</p>
-      <p>Who claims the identity of a Filipino designer?</p>
-      <p>Who is a Filipino?</p>
-    </div>
-
-    <div class="marquee-container" aria-hidden="true">
-      <p>How do we decolonize design?</p>
-      <p>What are the qualities of Filipino designs?</p>
-      <p>How can we recenter indigenous practices in design?</p>
-      <p>How do we embrace our roots and who we are coming forward?</p>
-      <p>Who claims the identity of a Filipino designer?</p>
-      <p>Who is a Filipino?</p>
-    </div>
-  </div>
-
-  <footer>
-    A PROJECT BY DEVELOPH EST 2019
-  </footer>
-
-
-  <script src="//code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
-  <script src="index.js" type="text/javascript"></script>
-</body>
-
-</html>
+</body></html>

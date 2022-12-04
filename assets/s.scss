@@ -2,6 +2,44 @@
 
 @import url("https://use.typekit.net/ppy4zhc.css");
 
+@font-face {
+  font-family: 'Arial Narrow';
+  src: url('ArialNarrow-Bold.woff2') format('woff2'),
+    url('ArialNarrow-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Arial Narrow';
+  src: url('ArialNarrow-BoldItalic.woff2') format('woff2'),
+    url('ArialNarrow-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Arial Narrow';
+  src: url('ArialNarrow.woff2') format('woff2'),
+    url('ArialNarrow.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Arial Narrow';
+  src: url('ArialNarrow-Italic.woff2') format('woff2'),
+    url('ArialNarrow-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+
 $blue: #397af5;
 $red: #d83030;
 $pink: #ff68ee;
@@ -14,6 +52,8 @@ $brown: #261a1a;
 
 .fx-noise {
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
   background-image: url(noise.gif);
@@ -22,6 +62,17 @@ $brown: #261a1a;
   opacity: 0.1;
   mix-blend-mode: darken;
   pointer-events: none;
+}
+
+#potato-container {
+  min-width: 100vw;
+  max-width: 100%;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .potato {
@@ -40,7 +91,7 @@ $brown: #261a1a;
   //     background-image: url(cover.png);
   background: $blue;
   width: 100vw;
-  height: 60vh;
+  height: 50vh;
   max-height: 320px;
   background-size: cover;
   display: flex;
@@ -60,18 +111,37 @@ $brown: #261a1a;
     text-align: center;
     text-shadow: 0 0 30px $yellow, 0 0 80px $yellow, 0 0 120px $yellow;
     line-height: 90%;
+
   }
 
   h3 {
     font-family: "Times New Roman";
     color: $red;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     font-style: italic;
     margin: 0;
     padding: .5em 1em;
     max-width: 80vw;
     color: #fff;
   }
+
+  @media only screen and (max-width: 600px) {
+
+    h1 {
+      font-size: 4.2rem;
+    }
+
+    h3 {
+      font-size: 1rem;
+    }
+
+  }
+
+}
+
+html {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -87,8 +157,12 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 100vw;
+  max-width: 100%;
   overflow-x: hidden;
+
+  @media only screen and (max-width: 600px) {
+    font-size: .8rem;
+  }
 }
 
 .marquee {
@@ -114,11 +188,17 @@ body {
 
   p {
     color: $pink;
+    font-size: 1rem;
   }
 
 }
 
 main {
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
   p {
     font-family: "Arial Narrow";
     font-stretch: condensed;
@@ -126,6 +206,8 @@ main {
     font-size: 1.3rem;
     padding: 1em;
     max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
     color: $blue;
   }
 
@@ -146,7 +228,7 @@ main {
     height: 120px;
     background: $yellow;
     margin: 0;
-    padding: 0;
+    padding: 0 1em;
 
     display: flex;
     align-content: center;
@@ -158,6 +240,10 @@ main {
       text-shadow: 0 0 30px $red;
       font-size: 2rem;
       text-align: center;
+
+      @media only screen and (max-width: 600px) {
+        font-size: 1.5rem;
+      }
     }
   }
 
@@ -228,6 +314,12 @@ em {
   font-style: italic;
 }
 
+a.btn-back {
+  font-size: 2em;
+  margin-right: 0 auto;
+}
+
+
 footer {
   width: 100vw;
   background: $blue;
@@ -235,6 +327,7 @@ footer {
   padding: .5em 1em;
   text-align: center;
 }
+
 
 @keyframes scroll {
   from {

@@ -13,8 +13,20 @@ $brown: #261a1a;
     font-size: 5.5em;
   }
 
+  h3 {
+    max-width: 90vw;
+  }
+
   @media only screen and (max-width: 888px) {
     max-height: none;
+
+    h1 {
+      font-size: 5rem;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+    }
   }
 
 }
@@ -28,7 +40,11 @@ $brown: #261a1a;
     width: 100vw;
     background: $red;
     color: $pink;
+    font-family: "Arial Narrow";
 
+    @media only screen and (max-width: 600px) {
+      font-size: .8rem;
+    }
 
     .row {
       margin: 0 auto;
@@ -37,6 +53,7 @@ $brown: #261a1a;
       display: flex;
       justify-content: space-between;
       flex-direction: row;
+
     }
   }
 
@@ -75,9 +92,4 @@ $brown: #261a1a;
     text-shadow: 0 0 5px $pink, 0 0 15px $pink, 0 0 15px $pink, 0 0 15px $pink, 0 0 35px $pink, 0 0 25px $pink;
   }
 
-}
-
-a.btn-back {
-  font-size: 2em;
-  margin-right: 0 auto;
 }
