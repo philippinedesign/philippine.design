@@ -272,6 +272,10 @@ a {
   text-transform: uppercase;
 }
 
+p a{
+  color: #fff;
+}
+
 a:hover {
   background: $yellow;
   cursor: pointer;
