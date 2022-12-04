@@ -102,8 +102,9 @@ body {
 
 main p {
   font-family: "Arial Narrow";
+  font-stretch: condensed;
   line-height: 140%;
-  font-size: 1rem;
+  font-size: 1.3rem;
   padding: 1em;
   max-width: 600px;
   color: #397af5;
